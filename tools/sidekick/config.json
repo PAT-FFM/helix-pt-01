@@ -1,0 +1,7 @@
+{
+  "project": "helix-pt-01",
+  "outerHost": "helix-pt-01--pat-ffm.hlx.live",
+  "host": "main--helix-pt-01--pat-ffm.hlx.live",
+  "byocdn": false,
+  "pushDownSelector": "header"
+}
