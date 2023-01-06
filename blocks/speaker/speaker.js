@@ -1,7 +1,7 @@
 export default function decorate(block) {
   fetch('/speaker/speaker.json')
   .then((response) => response.json())
-  .then((data) => data.forEach( (speaker) => console.log(speaker.Page) ));
+  .then((data) => data.data.forEach( (speaker) => console.log(speaker.Page) ));
   
   const ul = document.createElement('ul');
   const li = document.createElement('li');
