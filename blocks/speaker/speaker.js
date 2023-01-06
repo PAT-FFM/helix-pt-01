@@ -11,8 +11,8 @@ export default function decorate(block) {
   .then((data) => data.data.forEach( (speaker) => {
   
     const div3 = document.createElement('div');
-    div3.innerHTML = `<div class="speaker-gallery-item">
-        <div class="box-padding">
+    div3.className="speaker-gallery-item";
+    div3.innerHTML = `<div class="box-padding">
           <div class="speaker-image">
             <a href="/speaker/${speaker.Page}">
             <img src="${speaker.Image}" alt="${speaker.Firstname} ${speaker.Lastname}" 
@@ -24,7 +24,6 @@ export default function decorate(block) {
             </div>
             <div class="speaker-company">${speaker.Company}</div>
           </div>
-        </div>
         </div>`
     div2.append(div3);
   }));
