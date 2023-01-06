@@ -14,15 +14,15 @@ export default function decorate(block) {
     div3.innerHTML = `<div class="speaker-gallery-item">
         <div class="box-padding">
           <div class="speaker-image">
-            <a href="https://adapt.to/2021/en/conference/speaker.detail.suffix.html/alexander-saar.html">
-            <img src="/content/dam/adaptto/production/speaker-portraits/2020-Alexander-Saar.jpg/_jcr_content/renditions/original./2020-Alexander-Saar.jpg" alt="Alexander Saar" 
+            <a href="/speaker/${speaker.Page}">
+            <img src="${speaker.Image}" alt="${speaker.Firstname} ${speaker.Lastname}" 
             </a>
           </div>
           <div class="speaker-data">
             <div class="speaker-name">
-            <a href="https://adapt.to/2021/en/conference/speaker.detail.suffix.html/alexander-saar.html">Alexander Saar</a>
+            <a href="/speaker/${speaker.Page}">${speaker.Firstname} ${speaker.Lastname}</a>
             </div>
-            <div class="speaker-company">Adobe</div>
+            <div class="speaker-company">${speaker.Company}</div>
           </div>
         </div>
         </div>`
