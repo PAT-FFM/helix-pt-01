@@ -1,5 +1,8 @@
 export default function decorate(block) {
-  /* change to ul, li */
+  fetch('/speaker/speaker.json')
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+ 
   const ul = document.createElement('ul');
   const li = document.createElement('li');
   li.innerHTML = "hello world";
