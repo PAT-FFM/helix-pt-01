@@ -14,7 +14,7 @@ export default function decorate(block) {
     div3.className="speaker-gallery-item";
     div3.innerHTML = `<div class="speaker-image">
             <a href="/speaker/${speaker.Page}">
-            <img src="${speaker.Image}?width=400" alt="${speaker.Firstname} ${speaker.Lastname}" 
+            <img src="${speaker.Image}?width=400" alt="${speaker.Firstname} ${speaker.Lastname}"/>
             </a>
           </div>
           <div class="speaker-data">
