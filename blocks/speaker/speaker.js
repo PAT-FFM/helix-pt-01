@@ -12,8 +12,7 @@ export default function decorate(block) {
   
     const div3 = document.createElement('div');
     div3.className="speaker-gallery-item";
-    div3.innerHTML = `<div class="box-padding">
-          <div class="speaker-image">
+    div3.innerHTML = `<div class="speaker-image">
             <a href="/speaker/${speaker.Page}">
             <img src="${speaker.Image}?width=400" alt="${speaker.Firstname} ${speaker.Lastname}" 
             </a>
@@ -23,8 +22,7 @@ export default function decorate(block) {
             <a href="/speaker/${speaker.Page}">${speaker.Firstname} ${speaker.Lastname}</a>
             </div>
             <div class="speaker-company">${speaker.Company}</div>
-          </div>
-        </div>`
+          </div>`
     div2.append(div3);
   }));
   block.append(div2);
