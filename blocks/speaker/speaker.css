@@ -5,7 +5,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    gap: 20px
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.speaker-gallery-item {
+    width: 200px;
 }
 .speaker-gallery-item .speaker-image img{width:100%}
 .speaker-gallery-item .speaker-data{margin-top:5px}
