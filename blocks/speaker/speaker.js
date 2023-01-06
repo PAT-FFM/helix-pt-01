@@ -4,7 +4,7 @@ export default function decorate(block) {
   .then((response) => response.json())
   .then((data) => data.data.forEach( (speaker) => {
     const li = document.createElement('li');
-    li.innerHTML = speaker.Page;
+    li.innerHTML = speaker.Page + `<img src="${speaker.Image}?width=100">`
     ul.append(li);
   }));
   block.append(ul);
