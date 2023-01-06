@@ -1,4 +1,7 @@
 export default function decorate(block) {
+  const div = document.createElement('div');
+  div.innerHTML = `<a href="/speaker/speaker.json" target="_blank">Speaker Database</a>`;
+  block.append(div);
   const ul = document.createElement('ul');
   fetch('/speaker/speaker.json')
   .then((response) => response.json())
