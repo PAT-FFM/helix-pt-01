@@ -7,14 +7,6 @@
     width: 100%;
     gap: 20px
 }
-
-.speaker-gallery .speaker-gallery-item{width:100%}
-@media screen and (min-width:320px){.speaker-gallery .speaker-gallery-item{width:50%}
-}
-@media screen and (min-width:600px){.speaker-gallery .speaker-gallery-item{width:33.3333333333%}
-}
-@media screen and (min-width:799px){.speaker-gallery .speaker-gallery-item{width:25%}
-}
 .speaker-gallery-item .speaker-image img{width:100%}
 .speaker-gallery-item .speaker-data{margin-top:5px}
 .speaker-gallery-item .speaker-data .speaker-name{font-weight:bold}
