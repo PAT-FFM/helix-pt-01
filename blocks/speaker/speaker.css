@@ -6,12 +6,13 @@
     flex-wrap: wrap;
     width: 100%;
     gap: 10px;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .speaker-gallery-item {
-    width: 200px;
-    flex-grow: 1;
+    width: 280px;
+    max-width:300px;
+    flex-grow: 0;
 }
 .speaker-gallery-item .speaker-image img{width:100%}
 .speaker-gallery-item .speaker-data .speaker-name{font-weight:bold}
