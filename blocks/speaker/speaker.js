@@ -15,7 +15,7 @@ export default function decorate(block) {
     div3.innerHTML = `<div class="box-padding">
           <div class="speaker-image">
             <a href="/speaker/${speaker.Page}">
-            <img src="${speaker.Image}" alt="${speaker.Firstname} ${speaker.Lastname}" 
+            <img src="${speaker.Image}?width=400" alt="${speaker.Firstname} ${speaker.Lastname}" 
             </a>
           </div>
           <div class="speaker-data">
