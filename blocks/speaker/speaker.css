@@ -5,14 +5,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    gap: 10px;
-    justify-content: space-between;
+    gap: 20px;
+    justify-content: center;
 }
 
 .speaker-gallery-item {
-    width: 280px;
-    max-width:300px;
-    flex-grow: 0;
+    width: 300px;
 }
 .speaker-gallery-item .speaker-image img{width:100%}
 .speaker-gallery-item .speaker-data .speaker-name{font-weight:bold}
