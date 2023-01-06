@@ -5,14 +5,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    gap: 20px;
+    gap: 10px;
     justify-content: space-evenly;
 }
 
 .speaker-gallery-item {
     width: 200px;
+    flex-grow: 1;
 }
 .speaker-gallery-item .speaker-image img{width:100%}
-.speaker-gallery-item .speaker-data{margin-top:5px}
 .speaker-gallery-item .speaker-data .speaker-name{font-weight:bold}
-.speaker-gallery-item .speaker-data .speaker-company{font-weight:lighter;margin-top:5px}
+.speaker-gallery-item .speaker-data .speaker-company{font-weight:lighter}
