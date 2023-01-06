@@ -5,6 +5,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    gap: 20px
 }
 
 .speaker-gallery .speaker-gallery-item{width:100%}
@@ -14,10 +15,7 @@
 }
 @media screen and (min-width:799px){.speaker-gallery .speaker-gallery-item{width:25%}
 }
-.speaker-gallery-item .box-padding{margin-bottom:15px}
 .speaker-gallery-item .speaker-image img{width:100%}
 .speaker-gallery-item .speaker-data{margin-top:5px}
 .speaker-gallery-item .speaker-data .speaker-name{font-weight:bold}
-.speaker-gallery-item .speaker-data .speaker-twitter{font-size:smaller}
-.speaker-gallery-item .speaker-data .speaker-twitter::after{content:"\00a0"}
 .speaker-gallery-item .speaker-data .speaker-company{font-weight:lighter;margin-top:5px}
