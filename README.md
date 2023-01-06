@@ -2,8 +2,8 @@
 Your project's description...
 
 ## Environments
-- Preview: https://main--helix-pt-01---PAT-FFM.hlx.page/
-- Live: https://main--helix-pt-01---PAT-FFM.hlx.live/
+- Preview: https://main--helix-pt-01--PAT-FFM.hlx.page/
+- Live: https://main--helix-pt-01--PAT-FFM.hlx.live/
 
 ## Installation
 
