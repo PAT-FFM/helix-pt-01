@@ -201,6 +201,7 @@ hr {
 main img {
   max-width: 100%;
   width: auto;
+  max-height: 600px;
   height: auto;
 }
 
