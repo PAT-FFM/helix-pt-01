@@ -208,9 +208,6 @@ main img {
   main .section {
     padding: 64px 32px;
   }
-  main img {
-    max-width: 50%;
-  }
 }
 
 @media (min-width: 900px) {
