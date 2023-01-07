@@ -14,4 +14,5 @@
 }
 .speaker-gallery-item .speaker-image img{width:100%}
 .speaker-gallery-item .speaker-data .speaker-name{font-weight:bold}
+.speaker-gallery-item .speaker-data .speaker-twitter {font-size: smaller}
 .speaker-gallery-item .speaker-data .speaker-company{font-weight:lighter}
