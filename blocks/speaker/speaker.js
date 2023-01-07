@@ -18,9 +18,10 @@ export default function decorate(block) {
             <div class="speaker-name">
               <a href="/speaker/${speaker.Id}">${speaker.Firstname} ${speaker.Lastname}</a>
             </div>
+            ${speaker.Twitter ? `
             <div class="speaker-twitter">
               <a href="https://www.twitter.com/${speaker.Twitter}" target="_blank">@${speaker.Twitter}</a>
-            </div>
+            </div>` : `<!-- no twitter handle -->`}
             <div class="speaker-company">${speaker.Company}</div>
           </div>`
     div1.append(div2);
