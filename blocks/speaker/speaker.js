@@ -10,13 +10,13 @@ export default function decorate(block) {
     const div2 = document.createElement('div');
     div2.className="speaker-gallery-item";
     div2.innerHTML = `<div class="speaker-image">
-            <a href="/speaker/${speaker.Page}">
-            <img src="${speaker.Image}?width=400" alt="${speaker.Firstname} ${speaker.Lastname}"/>
+            <a href="/speaker/${speaker.Id}">
+              <img src="${speaker.Image}?width=400" alt="${speaker.Firstname} ${speaker.Lastname}"/>
             </a>
           </div>
           <div class="speaker-data">
             <div class="speaker-name">
-            <a href="/speaker/${speaker.Page}">${speaker.Firstname} ${speaker.Lastname}</a>
+              <a href="/speaker/${speaker.Page}">${speaker.Firstname} ${speaker.Lastname}</a>
             </div>
             <div class="speaker-company">${speaker.Company}</div>
           </div>`
