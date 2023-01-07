@@ -16,7 +16,7 @@ export default function decorate(block) {
           </div>
           <div class="speaker-data">
             <div class="speaker-name">
-              <a href="/speaker/${speaker.Page}">${speaker.Firstname} ${speaker.Lastname}</a>
+              <a href="/speaker/${speaker.Id}">${speaker.Firstname} ${speaker.Lastname}</a>
             </div>
             <div class="speaker-company">${speaker.Company}</div>
           </div>`
