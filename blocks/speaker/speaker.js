@@ -18,6 +18,9 @@ export default function decorate(block) {
             <div class="speaker-name">
               <a href="/speaker/${speaker.Id}">${speaker.Firstname} ${speaker.Lastname}</a>
             </div>
+            <div class="speaker-twitter">
+              <a href="https://www.twitter.com/${speaker.Twitter}" target="_blank">@${speaker.Twitter}</a>
+            </div>
             <div class="speaker-company">${speaker.Company}</div>
           </div>`
     div1.append(div2);
