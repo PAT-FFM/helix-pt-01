@@ -13,7 +13,7 @@ export default function decorate(block) {
     li.className="talk-item";
     talk.year
     talk.talk.
-    li.innerHTML = `<a href="${talk.talk.split('|').[1]}">${talk.talk.split('|').[0]}</a> ${talk.year}`
+    li.innerHTML = `<a href="${talk.talk.split('|')[1]}">${talk.talk.split('|')[0]}</a> ${talk.year}`
     ul.append(li);
  }));
   block.append(ul);
