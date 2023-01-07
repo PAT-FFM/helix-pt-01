@@ -8,7 +8,7 @@ export default function decorate(block) {
   
   fetch('/talks/talks-01.json')
   .then((response) => response.json())
-  .then( x => x.data.filter(t => t.speaker === speakername).forEach( (talk) => {
+  .then( x => x.data.filter(t => t.speaker.includes(speakername)).forEach( (talk) => {
     const li = document.createElement('li');
     li.className="talk-item";
     li.innerHTML = `<a href="${talk.talk.split('|')[1]}">${talk.talk.split('|')[0]}</a> (${talk.year})`
