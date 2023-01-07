@@ -207,7 +207,10 @@ main img {
 @media (min-width: 600px) {
   main .section {
     padding: 64px 32px;
-  }  
+  }
+  main img {
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 900px) {
@@ -219,7 +222,7 @@ main img {
     --heading-font-size-s: 24px;
     --heading-font-size-xs: 22px;  
   }
-  
+ 
   .section > div {
     max-width: 1200px;
     margin: auto;
