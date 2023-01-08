@@ -94,7 +94,7 @@ th.entry-title,td.entry-title{width:auto}
 @media screen and (max-width:320px){th:nth-child(2),td:nth-child(2){border-right:0}
 th:last-child,td:last-child{display:none}
 }
-td{border:3px solid #ccc;background-color:#fafafa}
+td{border:3px solid #ccc}
 td:first-child{border-left:0}
 td:last-child{border-right:0}
 
