@@ -1,5 +1,3 @@
-(16 sloc)  654 Bytes
-
 export default function decorate(block) {
   
   block.innerHTML= `
