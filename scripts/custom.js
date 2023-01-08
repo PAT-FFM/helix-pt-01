@@ -870,6 +870,7 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
       plugin.initGallery();
     });
   };
+}; 
 })(jQuery);
 
 /**
