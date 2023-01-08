@@ -117,6 +117,6 @@ td:last-child{border-right:0}
 @media screen and (min-width:600px){.interactive_table ul li{width:100%;float:none}
 }
 .interactive_table thead th{padding-top:0}
-.interactive_table input[type="checkbox"]{display:inline-block; margin:0; padding:0}
+.interactive_table input[type="checkbox"]{display:inline-block; margin:0; padding:0; width:fit-content}
 
 .archive-container{overflow:hidden}
