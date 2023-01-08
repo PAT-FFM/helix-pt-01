@@ -1263,5 +1263,8 @@ jQuery(document).ready(function ($) {
   $.overlay();
   $(".image_gallery").imageGallery();
   $(".interactive_table").interactiveTable({"filter":window.location.hash});
-
+  
+  addEventListener('hashchange', (event) => { location.reload(); });
 });
+
+
