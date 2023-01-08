@@ -38,7 +38,7 @@ else {
   fetch('/speaker/speaker.json')
   .then((response) => response.json())
   .then((x) => { 
-    const speaker = x.data.find(element => element.Id === location.hash);      
+    const speaker = x.data.find(element => element.Id === 'stefan-seifert');      
     div1.innerHTML = `${speaker.Firstname} ${speaker.Lastname} (${speaker.Company})<img src="${speaker.Image}" alt=""/>`
     block.append(div1);
   });
