@@ -30,4 +30,18 @@ if (location.hash == null || location.hash === "" ) {
   block.append(div1);
   });
 }
+else {
+  
+  const div1 = document.createElement('div');
+  div1.className="speaker-item";
+  
+  fetch('/speaker/speaker.json')
+  .then((response) => response.json())
+  .then((x) => { 
+    const speaker = x.data.find(element => element.Id === location.hash);      
+    div1.innerHTML = `${speaker.Firstname} ${speaker.Lastname} (${speaker.Company})<img src="${speaker.Image}" alt=""/>`
+  });
+  block.append(div1);
+  });
+}
 }
