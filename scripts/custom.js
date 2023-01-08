@@ -911,8 +911,10 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
               "data": "year"
             },
             {
-              "data": "talk"
-              
+              "data": "talk",
+              "render": function (talk) {
+                return "<a href=\"" + talk.split("|")[1] + "\">" + talk.split("|")[0] + "</a>";
+              }
             },
             {
               "data": "speaker"
@@ -996,11 +998,11 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
             type: "GET",
             url: dataUrl,
             success: function (response) {
-              var categories = self.getFilterOptions(response);
+              var categories = self.getFilterOptions(response.data);
               self.buildFilter(categories);
               // redraw table with new data
               $table.clear();
-              $table.rows.add(response);
+              $table.rows.add(response.data);
               $table.draw();
               self.applyExpandLogic();
               $element.find("table").show();
