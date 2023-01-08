@@ -5,8 +5,8 @@ export default function decorate(block) {
   
   fetch('/speaker/speaker.json')
   .then((response) => response.json())
-  .then((data) => data.data.forEach( (speaker) => {
-  
+  .then((x) => { 
+    x.data.forEach( (speaker) => {
     const div2 = document.createElement('div');
     div2.className="speaker-gallery-item";
     div2.innerHTML = `<div class="speaker-image">
@@ -25,6 +25,7 @@ export default function decorate(block) {
             <div class="speaker-company">${speaker.Company}</div>
           </div>`
     div1.append(div2);
-  }));
+  });
   block.append(div1);
+  });
 }
