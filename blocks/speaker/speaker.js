@@ -40,8 +40,7 @@ else {
   .then((x) => { 
     const speaker = x.data.find(element => element.Id === location.hash);      
     div1.innerHTML = `${speaker.Firstname} ${speaker.Lastname} (${speaker.Company})<img src="${speaker.Image}" alt=""/>`
-  });
-  block.append(div1);
+    block.append(div1);
   });
 }
 }
