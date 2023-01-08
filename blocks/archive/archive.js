@@ -1,7 +1,7 @@
 export default function decorate(block) {
   
   block.innerHTML= `
-  <div class="contentHeadline section"><h1 class="title title-section">Talk Archive</h1></div>
+  <div class="contentHeadline section"><h3 class="title title-section">Talk Archive</h3></div>
 <div class="contentRichText section">
 <p>This is our talk archive with a list of all adaptTo() talks since 2011.<br /></p>
 </div>
