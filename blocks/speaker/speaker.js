@@ -1,5 +1,5 @@
 export default function decorate(block) {
-if (location.hash == null ) {
+if (location.hash == null || location.hash === "" ) {
   
   const div1 = document.createElement('div');
   div1.className="speaker-gallery";
