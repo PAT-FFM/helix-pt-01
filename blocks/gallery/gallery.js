@@ -20,12 +20,15 @@ export default function decorate(block) {
       <a class="gallery_fullscreen_btn" href="" title="Fullscreen">Fullscreen</a>
     </div>
     <ul class="gallery_thumb_list">
-      <li><a class="gallery_thumb" href="https://adapt.to/content/dam/adaptto/production/gallery/2021/210928_AdaptTo_3231.jpg/_jcr_content/renditions/original.image_file.980.490.file/210928_AdaptTo_3231.jpg" 
-        rel="gallery" data-overlay="https://adapt.to/2021/en/conference/gallery/_jcr_content/content/stagegallery.galleryOverlay.html/210928_AdaptTo_3231.jpg.html">
-        <img src="https://adapt.to/content/dam/adaptto/production/gallery/2021/210928_AdaptTo_3231.jpg/_jcr_content/renditions/original.image_file.100.50.file/210928_AdaptTo_3231.jpg"/></a></li>
-      <li><a class="gallery_thumb" href="https://adapt.to/content/dam/adaptto/production/gallery/2021/210928_AdaptTo_3909.jpg/_jcr_content/renditions/original.image_file.980.490.file/210928_AdaptTo_3909.jpg" 
-        rel="gallery" data-overlay="https://adapt.to/2021/en/conference/gallery/_jcr_content/content/stagegallery.galleryOverlay.html/210928_AdaptTo_3909.jpg.html">
-        <img src="https://adapt.to/content/dam/adaptto/production/gallery/2021/210928_AdaptTo_3909.jpg/_jcr_content/renditions/original.image_file.100.50.file/210928_AdaptTo_3909.jpg"/></a></li>
+      <li><a class="gallery_thumb" href="https://main--helix-pt-01--pat-ffm.hlx.page/media_1dc9f915d9ae600ec2dbbf8e1a0b1bb6b4302b2f2.jpeg" 
+        rel="gallery" data-overlay="https://main--helix-pt-01--pat-ffm.hlx.page/media_1dc9f915d9ae600ec2dbbf8e1a0b1bb6b4302b2f2.jpeg">
+        <img src="https://main--helix-pt-01--pat-ffm.hlx.page/media_1dc9f915d9ae600ec2dbbf8e1a0b1bb6b4302b2f2.jpeg?width=500"/></a></li>
+      <li><a class="gallery_thumb" href="https://main--helix-pt-01--pat-ffm.hlx.page/media_1dc9f915d9ae600ec2dbbf8e1a0b1bb6b4302b2f2.jpeg" 
+        rel="gallery" data-overlay="https://main--helix-pt-01--pat-ffm.hlx.page/media_1dc9f915d9ae600ec2dbbf8e1a0b1bb6b4302b2f2.jpeg">
+        <img src="https://main--helix-pt-01--pat-ffm.hlx.page/media_1dc9f915d9ae600ec2dbbf8e1a0b1bb6b4302b2f2.jpeg?width=500"/></a></li> 
+      <li><a class="gallery_thumb" href="https://main--helix-pt-01--pat-ffm.hlx.page/media_1dc9f915d9ae600ec2dbbf8e1a0b1bb6b4302b2f2.jpeg" 
+        rel="gallery" data-overlay="https://main--helix-pt-01--pat-ffm.hlx.page/media_1dc9f915d9ae600ec2dbbf8e1a0b1bb6b4302b2f2.jpeg">
+        <img src="https://main--helix-pt-01--pat-ffm.hlx.page/media_1dc9f915d9ae600ec2dbbf8e1a0b1bb6b4302b2f2.jpeg?width=500"/></a></li>        
     </ul>
   </div>
 </div>
