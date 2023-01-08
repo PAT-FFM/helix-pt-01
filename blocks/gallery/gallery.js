@@ -20,13 +20,13 @@ export default function decorate(block) {
     block.innerHTML= `
     <section id="stage" class="col-3-4">
       <article class="box-padding">
-      <div class="contentHeadline section"><h1 class="title title-section">Gallery</h1>
+      <div class="contentHeadline"><h1 class="title title-section">Gallery</h1>
     </div>
-      <div class="contentRichText section">
+      <div class="contentRichText">
       <p>Photos from adaptTo() 2021 Online Conference - &quot;behind the scenes&quot;.<br />
     </p>
     </div>
-      <div class="stagegallery section"><div class="stage">
+      <div class="stagegallery"><div class="stage">
       <div class="image_gallery">
         <div class="gallery_stage">
           <a class="gallery__prev">Previous</a>
