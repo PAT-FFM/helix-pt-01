@@ -15,9 +15,7 @@ export default function decorate(block) {
         </a>
     `;
     ul.append(li);
-    console.log(ul.outerHTML);
- }));
- 
+ })
   block.innerHTML= `
     <section id="stage" class="col-3-4">
       <article class="box-padding">
@@ -44,4 +42,5 @@ export default function decorate(block) {
     </article>
     </section>
     `;
+)    
 }
