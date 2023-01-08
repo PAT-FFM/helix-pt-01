@@ -15,6 +15,7 @@ export default function decorate(block) {
         </a>
     `;
     ul.append(li);
+    console.log(ul.outerHTML);
  }));
  
   block.innerHTML= `
