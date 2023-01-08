@@ -1055,19 +1055,12 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
           for (var index in filterCategories) {
             var categoryItem = filterCategories[index];
             var category = categoryItem.category;
-            // isArray? (e.g. speaker or tags)
-            if (Array.isArray(entry[category])) {
-              categoryItem.items = categoryItem.items.concat(entry[category]);
+            // all entries are Strings .. but special ones .. e.g. "," means comma separated array values
+            if (category === "talk") {
+              categoryItem.items.push(entry[category].split("|")[0]);
             }
-            // is string? (e.g. year)
-            else if (typeof entry[category] === "string") {
-              categoryItem.items.push(entry[category]);
-            }
-            // special cases (e.g. talk)
             else {
-              if (category === "talk" && typeof entry[category] === "object") {
-                categoryItem.items.push(entry[category].title);
-              }
+              categoryItem.items = categoryItem.items.concat(entry[category].split(","));
             }
           }
         });
