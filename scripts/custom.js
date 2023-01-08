@@ -837,17 +837,34 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
           var url = $($galleryItems[activeIndex]).data("overlay");
           $.log("loadItem", url);
           $.overlay.open();
-          var $loadTarget = $.overlay.getContent();
-          $loadTarget.load(url, function(response, status, xhr) {
-            if (status !== "error") {
-              plugin.loadComplete();
-              // trigger ajax.loaded event for other plugins
-              $(document).trigger("ajax.loaded", $loadTarget);
-            } else {
-              $loadTarget.append($("<div>").html("Status: " + xhr.status + " " + xhr.statusText));
-            }
-            //
-          });
+         var $loadTarget = $.overlay.getContent();
+          if (url.endsWith() === '.html') {
+              $loadTarget.load(url, function(response, status, xhr) {
+                if (status !== "error") {
+                  plugin.loadComplete();
+                  // trigger ajax.loaded event for other plugins
+                  $(document).trigger("ajax.loaded", $loadTarget);
+                } else {
+                  $loadTarget.append($("<div>").html("Status: " + xhr.status + " " + xhr.statusText));
+                }
+                //
+              });
+          }
+          else {
+              const overlayContent = `
+                <div class="lb_gallery">
+                <div class="gallery_stage">
+                <a class="gallery__prev">Previous</a>
+                <div class="gallery_placeholder">
+                <img class="gallery_image" src="${url}">
+                </div>
+                <a class="gallery__next">Next</a>
+                </div>
+                </div>
+              `;
+             $loadTarget = overlayContent;
+             plugin.loadComplete();
+             $(document).trigger("ajax.loaded", $loadTarget);
         }
       };
       plugin.initGallery();
