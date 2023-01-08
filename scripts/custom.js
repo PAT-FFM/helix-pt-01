@@ -911,10 +911,8 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
               "data": "year"
             },
             {
-              "data": "talk",
-              "render": function (talk) {
-                return "<a href=\"" + talk.split("|")[1] + "\">" + talk.split("|")[0] + "</a>";
-              }
+              "data": "talk"
+              
             },
             {
               "data": "speaker"
