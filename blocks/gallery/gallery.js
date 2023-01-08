@@ -10,9 +10,8 @@ export default function decorate(block) {
     const li = document.createElement('li');
     li.className="gallery-item";
     li.innerHTML = `
-        <a class="gallery_thumb" href="https://main--helix-pt-01--pat-ffm.hlx.page/${item.path}" 
-            rel="gallery" data-overlay="https://main--helix-pt-01--pat-ffm.hlx.page/${item.path}">
-        <img src="https://main--helix-pt-01--pat-ffm.hlx.page/${item.path}?width=200"/>
+        <a class="gallery_thumb" rel="gallery" data-overlay="https://main--helix-pt-01--pat-ffm.hlx.page/${item.path}">
+        <img src="https://main--helix-pt-01--pat-ffm.hlx.page/${item.path}?width=100"/>
         </a>
     `;
     ul.append(li);
