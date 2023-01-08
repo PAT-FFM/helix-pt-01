@@ -1,5 +1,6 @@
 export default function decorate(block) {
- 
+if (location.hash == null ) {
+  
   const div1 = document.createElement('div');
   div1.className="speaker-gallery";
   
@@ -28,4 +29,5 @@ export default function decorate(block) {
   });
   block.append(div1);
   });
+}
 }
