@@ -711,7 +711,7 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
          * Extend default settings with options
          */
         options: $.extend({
-          galleryItemSelector: "a[rel=\"gallery\"]",
+          galleryItemSelector: "a.gallery_thumb",
           pagerNextSelector: ".gallery__next",
           pagerPrevSelector: ".gallery__prev",
           fullscreenBtnSelector: ".gallery_fullscreen_btn",
