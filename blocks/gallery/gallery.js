@@ -31,7 +31,7 @@ export default function decorate(block) {
         <div class="gallery_stage">
           <a class="gallery__prev">Previous</a>
           <div class="gallery_placeholder">
-            <img class="gallery_image portrait_img" src="https://main--helix-pt-01--pat-ffm.hlx.page/media_1dc9f915d9ae600ec2dbbf8e1a0b1bb6b4302b2f2.jpeg#width=1600&amp;height=800">
+            <img class="gallery_image portrait_img" src="">
           </div>
           <a class="gallery__next">Next</a>
           <a class="gallery_fullscreen_btn" href="" title="Fullscreen">Fullscreen</a>
