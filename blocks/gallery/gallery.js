@@ -5,7 +5,8 @@ export default function decorate(block) {
 
   fetch('/gallery/gallery.json')
   .then((response) => response.json())
-  .then( x => x.data.forEach( (item) => {
+  .then( x => { 
+    x.data.forEach( (item) => {
     const li = document.createElement('li');
     li.className="gallery-item";
     li.innerHTML = `
@@ -15,8 +16,8 @@ export default function decorate(block) {
         </a>
     `;
     ul.append(li);
- })
-  block.innerHTML= `
+    });
+    block.innerHTML= `
     <section id="stage" class="col-3-4">
       <article class="box-padding">
       <div class="contentHeadline section"><h1 class="title title-section">Gallery</h1>
@@ -42,5 +43,5 @@ export default function decorate(block) {
     </article>
     </section>
     `;
-)    
+  });
 }
