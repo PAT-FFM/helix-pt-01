@@ -1027,7 +1027,7 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
             obj[arr[i]] = 0;
           }
           for (i in obj) {
-            out.push(i);
+            if (i && i.length > 1) out.push(i);
           }
           return out;
         }
