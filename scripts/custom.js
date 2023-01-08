@@ -828,7 +828,6 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
             $stageImg.addClass("portrait_img");
           }
         },
-
         /**
          * Load image in overlay
          */
@@ -837,18 +836,18 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
           var url = $($galleryItems[activeIndex]).data("overlay");
           $.log("loadItem", url);
           $.overlay.open();
-         var $loadTarget = $.overlay.getContent();
+          var $loadTarget = $.overlay.getContent();
           if (url.endsWith() === '.html') {
-              $loadTarget.load(url, function(response, status, xhr) {
-                if (status !== "error") {
-                  plugin.loadComplete();
-                  // trigger ajax.loaded event for other plugins
-                  $(document).trigger("ajax.loaded", $loadTarget);
-                } else {
-                  $loadTarget.append($("<div>").html("Status: " + xhr.status + " " + xhr.statusText));
-                }
-                //
-              });
+          $loadTarget.load(url, function(response, status, xhr) {
+            if (status !== "error") {
+              plugin.loadComplete();
+              // trigger ajax.loaded event for other plugins
+              $(document).trigger("ajax.loaded", $loadTarget);
+            } else {
+              $loadTarget.append($("<div>").html("Status: " + xhr.status + " " + xhr.statusText));
+            }
+            //
+          });
           }
           else {
               const overlayContent = `
@@ -865,13 +864,21 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
              $loadTarget = overlayContent;
              plugin.loadComplete();
              $(document).trigger("ajax.loaded", $loadTarget);
+          }
         }
       };
       plugin.initGallery();
     });
   };
-}; 
 })(jQuery);
+
+
+        
+        
+        
+
+
+
 
 /**
  * jQuery plugin for interactive tables
