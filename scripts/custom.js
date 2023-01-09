@@ -871,8 +871,6 @@ function imageGallery($) {
     });
   };
 }
-(imageGallery (jQuery));
-
 
 /**
  * jQuery plugin for interactive tables
