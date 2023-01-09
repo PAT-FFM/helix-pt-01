@@ -696,7 +696,7 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
  * Click on fullscreen button loads view in fullscreen overlay, URI defined in data attribute
  *
  */
-(function($) {
+function imageGallery($) {
   "use strict";
   $.fn.imageGallery = function (pOptions) {
     $(this).each(function () {
@@ -870,14 +870,8 @@ h.each(n,function(a,b){h.fn.DataTable[a]=b});return h.fn.dataTable});
       plugin.initGallery();
     });
   };
-})(jQuery);
-
-
-        
-        
-        
-
-
+}
+(imageGallery (jQuery));
 
 
 /**
