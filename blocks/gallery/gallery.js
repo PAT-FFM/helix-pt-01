@@ -42,5 +42,6 @@ export default function decorate(block) {
     </article>
     </section>
     `;
+   jQuery(".image_gallery").imageGallery()
   });
 }
