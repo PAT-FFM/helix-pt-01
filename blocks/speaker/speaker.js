@@ -19,7 +19,7 @@ if (sp == null || sp.length < 2) {
           </div>
           <div class="speaker-data">
             <div class="speaker-name">
-              <a href="/speaker/#${speaker.Id}">${speaker.Firstname} ${speaker.Lastname}</a>
+              <a href="/speaker/?${speaker.Id}">${speaker.Firstname} ${speaker.Lastname}</a>
             </div>
             ${speaker.Twitter ? `
             <div class="speaker-twitter">
