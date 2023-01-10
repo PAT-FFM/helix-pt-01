@@ -1,6 +1,8 @@
 export default function decorate(block) {
-if (location.hash == null || location.hash.length < 2) {
-  
+const queryString = location.search;
+const params = new URLSearchParams(queryString);
+const sp = params.get("sp"));
+if (sp == null || sp.length < 2) {
   const div1 = document.createElement('div');
   div1.className="speaker-gallery";
   
@@ -38,7 +40,7 @@ else {
   fetch('/speaker/speaker.json')
   .then((response) => response.json())
   .then((x) => { 
-    const speaker = x.data.find(element => element.Id === location.hash.substring(1));      
+    const speaker = x.data.find(element => element.Id === sp);      
     div1.innerHTML = `${speaker.Firstname} ${speaker.Lastname} (${speaker.Company})<img src="${speaker.Image}" alt=""/>`
     block.append(div1);
   
