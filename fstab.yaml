@@ -1,2 +1,5 @@
 mountpoints:
   /: https://drive.google.com/drive/folders/1MwBcbRuGRx3Hmb7M6gmc6gGBabH4oVAb
+
+folders:
+  /speaker/: /speaker/index
