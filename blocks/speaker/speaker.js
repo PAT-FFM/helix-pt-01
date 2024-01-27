@@ -1,10 +1,12 @@
 export default function decorate(block) {
-const path = location.pathname;
-const sp = path.split('/')[2];
-}
-if (sp == null || sp.length < 2) {
-  const div1 = document.createElement('div');
-  div1.className="speaker-gallery";
+
+  const path = location.pathname;
+  const sp = path.split('/')[2];
+
+  if (sp == null || sp.length < 2) {
+  
+    const div1 = document.createElement('div');
+    div1.className="speaker-gallery";
   
   fetch('/speaker/speaker.json')
   .then((response) => response.json())
