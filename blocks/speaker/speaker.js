@@ -3,7 +3,7 @@ const queryString = location.search;
 const params = new URLSearchParams(queryString);
 var sp = params.get("sp");
 if (sp == null || sp.length < 2) {
-  const path = location.path;
+  const path = location.pathname;
   sp = path.split('/')[2];
 }
 if (sp == null || sp.length < 2) {
