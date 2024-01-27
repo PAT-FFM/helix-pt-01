@@ -1,7 +1,11 @@
 export default function decorate(block) {
 const queryString = location.search;
 const params = new URLSearchParams(queryString);
-const sp = params.get("sp");
+var sp = params.get("sp");
+if (sp == null || sp.length < 2) {
+  const path = location.path;
+  sp = path.split('/')[2];
+}
 if (sp == null || sp.length < 2) {
   const div1 = document.createElement('div');
   div1.className="speaker-gallery";
