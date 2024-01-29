@@ -21,7 +21,7 @@ export default function decorate(block) {
           </div>
           <div class="speaker-data">
             <div class="speaker-name">
-              <a href="/speaker/?sp=${speaker.Id}">${speaker.Firstname} ${speaker.Lastname}</a>
+              <a href="/speaker/${speaker.Id}">${speaker.Firstname} ${speaker.Lastname}</a>
             </div>
             ${speaker.Twitter ? `
             <div class="speaker-twitter">
